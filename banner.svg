@@ -1,0 +1,248 @@
+<svg viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg" width="1200" height="340">
+  <defs>
+    <!-- Animated gradient background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="45%" style="stop-color:#0f1923"/>
+      <stop offset="100%" style="stop-color:#0a0e1a"/>
+    </linearGradient>
+
+    <!-- Blue glow gradient -->
+    <radialGradient id="glowLeft" cx="15%" cy="50%" r="45%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:0"/>
+    </radialGradient>
+
+    <radialGradient id="glowRight" cx="85%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0"/>
+    </radialGradient>
+
+    <radialGradient id="glowCenter" cx="50%" cy="50%" r="30%">
+      <stop offset="0%" style="stop-color:#63b3ed;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#63b3ed;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Filter for glow effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="rounded">
+      <rect width="1200" height="340" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <!-- Base background -->
+    <rect width="1200" height="340" fill="url(#bgGrad)"/>
+
+    <!-- Glow orbs -->
+    <rect width="1200" height="340" fill="url(#glowLeft)"/>
+    <rect width="1200" height="340" fill="url(#glowRight)"/>
+    <rect width="1200" height="340" fill="url(#glowCenter)"/>
+
+    <!-- Grid lines - horizontal -->
+    <g stroke="rgba(99,179,237,0.04)" stroke-width="1">
+      <line x1="0" y1="40" x2="1200" y2="40"/>
+      <line x1="0" y1="80" x2="1200" y2="80"/>
+      <line x1="0" y1="120" x2="1200" y2="120"/>
+      <line x1="0" y1="160" x2="1200" y2="160"/>
+      <line x1="0" y1="200" x2="1200" y2="200"/>
+      <line x1="0" y1="240" x2="1200" y2="240"/>
+      <line x1="0" y1="280" x2="1200" y2="280"/>
+      <line x1="0" y1="320" x2="1200" y2="320"/>
+    </g>
+
+    <!-- Grid lines - vertical -->
+    <g stroke="rgba(99,179,237,0.04)" stroke-width="1">
+      <line x1="40"   y1="0" x2="40"   y2="340"/>
+      <line x1="80"   y1="0" x2="80"   y2="340"/>
+      <line x1="120"  y1="0" x2="120"  y2="340"/>
+      <line x1="160"  y1="0" x2="160"  y2="340"/>
+      <line x1="200"  y1="0" x2="200"  y2="340"/>
+      <line x1="240"  y1="0" x2="240"  y2="340"/>
+      <line x1="280"  y1="0" x2="280"  y2="340"/>
+      <line x1="320"  y1="0" x2="320"  y2="340"/>
+      <line x1="360"  y1="0" x2="360"  y2="340"/>
+      <line x1="400"  y1="0" x2="400"  y2="340"/>
+      <line x1="440"  y1="0" x2="440"  y2="340"/>
+      <line x1="480"  y1="0" x2="480"  y2="340"/>
+      <line x1="520"  y1="0" x2="520"  y2="340"/>
+      <line x1="560"  y1="0" x2="560"  y2="340"/>
+      <line x1="600"  y1="0" x2="600"  y2="340"/>
+      <line x1="640"  y1="0" x2="640"  y2="340"/>
+      <line x1="680"  y1="0" x2="680"  y2="340"/>
+      <line x1="720"  y1="0" x2="720"  y2="340"/>
+      <line x1="760"  y1="0" x2="760"  y2="340"/>
+      <line x1="800"  y1="0" x2="800"  y2="340"/>
+      <line x1="840"  y1="0" x2="840"  y2="340"/>
+      <line x1="880"  y1="0" x2="880"  y2="340"/>
+      <line x1="920"  y1="0" x2="920"  y2="340"/>
+      <line x1="960"  y1="0" x2="960"  y2="340"/>
+      <line x1="1000" y1="0" x2="1000" y2="340"/>
+      <line x1="1040" y1="0" x2="1040" y2="340"/>
+      <line x1="1080" y1="0" x2="1080" y2="340"/>
+      <line x1="1120" y1="0" x2="1120" y2="340"/>
+      <line x1="1160" y1="0" x2="1160" y2="340"/>
+    </g>
+
+    <!-- Matrix brackets LEFT side — decorative large bracket [ -->
+    <g filter="url(#glow)" opacity="0.55">
+      <rect x="68" y="80" width="4" height="180" rx="2" fill="#38bdf8"/>
+      <rect x="68" y="80" width="28" height="4" rx="2" fill="#38bdf8"/>
+      <rect x="68" y="256" width="28" height="4" rx="2" fill="#38bdf8"/>
+    </g>
+
+    <!-- Matrix brackets RIGHT side — decorative large bracket ] -->
+    <g filter="url(#glow)" opacity="0.55">
+      <rect x="1128" y="80" width="4" height="180" rx="2" fill="#38bdf8"/>
+      <rect x="1104" y="80" width="28" height="4" rx="2" fill="#38bdf8"/>
+      <rect x="1104" y="256" width="28" height="4" rx="2" fill="#38bdf8"/>
+    </g>
+
+    <!-- Decorative dot matrix left -->
+    <g fill="rgba(56,189,248,0.18)" filter="url(#subtleGlow)">
+      <circle cx="120" cy="120" r="2.5"/>
+      <circle cx="145" cy="120" r="2.5"/>
+      <circle cx="170" cy="120" r="2.5"/>
+      <circle cx="120" cy="145" r="2.5"/>
+      <circle cx="145" cy="145" r="2.5"/>
+      <circle cx="170" cy="145" r="2.5"/>
+      <circle cx="120" cy="170" r="2.5"/>
+      <circle cx="145" cy="170" r="2.5"/>
+      <circle cx="170" cy="170" r="2.5"/>
+
+      <circle cx="120" cy="195" r="2.5" fill="rgba(56,189,248,0.1)"/>
+      <circle cx="145" cy="195" r="2.5" fill="rgba(56,189,248,0.1)"/>
+      <circle cx="170" cy="195" r="2.5" fill="rgba(56,189,248,0.1)"/>
+      <circle cx="120" cy="220" r="2.5" fill="rgba(56,189,248,0.1)"/>
+      <circle cx="145" cy="220" r="2.5" fill="rgba(56,189,248,0.1)"/>
+      <circle cx="170" cy="220" r="2.5" fill="rgba(56,189,248,0.1)"/>
+    </g>
+
+    <!-- Decorative dot matrix right -->
+    <g fill="rgba(139,92,246,0.2)" filter="url(#subtleGlow)">
+      <circle cx="1030" cy="120" r="2.5"/>
+      <circle cx="1055" cy="120" r="2.5"/>
+      <circle cx="1080" cy="120" r="2.5"/>
+      <circle cx="1030" cy="145" r="2.5"/>
+      <circle cx="1055" cy="145" r="2.5"/>
+      <circle cx="1080" cy="145" r="2.5"/>
+      <circle cx="1030" cy="170" r="2.5"/>
+      <circle cx="1055" cy="170" r="2.5"/>
+      <circle cx="1080" cy="170" r="2.5"/>
+
+      <circle cx="1030" cy="195" r="2.5" fill="rgba(139,92,246,0.1)"/>
+      <circle cx="1055" cy="195" r="2.5" fill="rgba(139,92,246,0.1)"/>
+      <circle cx="1080" cy="195" r="2.5" fill="rgba(139,92,246,0.1)"/>
+      <circle cx="1030" cy="220" r="2.5" fill="rgba(139,92,246,0.1)"/>
+      <circle cx="1055" cy="220" r="2.5" fill="rgba(139,92,246,0.1)"/>
+      <circle cx="1080" cy="220" r="2.5" fill="rgba(139,92,246,0.1)"/>
+    </g>
+
+    <!-- Operation symbols scattered -->
+    <text x="216" y="158" font-family="monospace" font-size="26" fill="rgba(56,189,248,0.12)" font-weight="bold">+</text>
+    <text x="228" y="208" font-family="monospace" font-size="22" fill="rgba(139,92,246,0.1)" font-weight="bold">×</text>
+    <text x="950" y="155" font-family="monospace" font-size="26" fill="rgba(56,189,248,0.12)" font-weight="bold">−</text>
+    <text x="960" y="205" font-family="monospace" font-size="22" fill="rgba(139,92,246,0.1)" font-weight="bold">×</text>
+
+    <!-- Horizontal accent lines -->
+    <line x1="300" y1="108" x2="900" y2="108" stroke="rgba(99,179,237,0.08)" stroke-width="1"/>
+    <line x1="300" y1="232" x2="900" y2="232" stroke="rgba(99,179,237,0.08)" stroke-width="1"/>
+
+    <!-- Top glowing accent line -->
+    <rect x="0" y="0" width="1200" height="2" fill="rgba(56,189,248,0.3)"/>
+    <!-- Bottom glowing accent line -->
+    <rect x="0" y="338" width="1200" height="2" fill="rgba(56,189,248,0.15)"/>
+
+    <!-- Corner markers -->
+    <g stroke="rgba(99,179,237,0.4)" stroke-width="1.5" fill="none">
+      <path d="M16,30 L16,16 L30,16"/>
+      <path d="M1170,16 L1184,16 L1184,30"/>
+      <path d="M16,310 L16,324 L30,324"/>
+      <path d="M1170,324 L1184,324 L1184,310"/>
+    </g>
+
+    <!-- Main title -->
+    <text
+      x="600" y="160"
+      font-family="'Courier New', monospace"
+      font-weight="700"
+      font-size="62"
+      fill="#e2e8f0"
+      text-anchor="middle"
+      letter-spacing="14"
+      filter="url(#strongGlow)"
+      style="text-shadow: 0 0 30px rgba(99,179,237,0.6)"
+    >MATRIX CALC</text>
+
+    <!-- Glow layer for title -->
+    <text
+      x="600" y="160"
+      font-family="'Courier New', monospace"
+      font-weight="700"
+      font-size="62"
+      fill="rgba(99,179,237,0.2)"
+      text-anchor="middle"
+      letter-spacing="14"
+    >MATRIX CALC</text>
+
+    <!-- Subtitle -->
+    <text
+      x="600" y="200"
+      font-family="'Courier New', monospace"
+      font-size="13"
+      fill="rgba(99,179,237,0.6)"
+      text-anchor="middle"
+      letter-spacing="8"
+    >STREAMLIT · NUMPY · PYTHON</text>
+
+    <!-- Tag pills -->
+    <!-- Add, Subtract, Multiply pill -->
+    <g filter="url(#subtleGlow)">
+      <!-- pill 1 -->
+      <rect x="396" y="222" width="100" height="26" rx="13" fill="rgba(56,189,248,0.08)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+      <text x="446" y="239" font-family="'Courier New', monospace" font-size="11" fill="#63b3ed" text-anchor="middle" letter-spacing="2">ADD</text>
+
+      <!-- pill 2 -->
+      <rect x="512" y="222" width="130" height="26" rx="13" fill="rgba(56,189,248,0.08)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+      <text x="577" y="239" font-family="'Courier New', monospace" font-size="11" fill="#63b3ed" text-anchor="middle" letter-spacing="2">SUBTRACT</text>
+
+      <!-- pill 3 -->
+      <rect x="658" y="222" width="130" height="26" rx="13" fill="rgba(56,189,248,0.08)" stroke="rgba(56,189,248,0.3)" stroke-width="1"/>
+      <text x="723" y="239" font-family="'Courier New', monospace" font-size="11" fill="#63b3ed" text-anchor="middle" letter-spacing="2">MULTIPLY</text>
+    </g>
+
+    <!-- Bottom subtle text -->
+    <text
+      x="600" y="302"
+      font-family="'Courier New', monospace"
+      font-size="10"
+      fill="rgba(99,179,237,0.25)"
+      text-anchor="middle"
+      letter-spacing="5"
+    >// MATRIX OPERATIONS · REAL-TIME · WEB-BASED //</text>
+
+  </g>
+</svg>
